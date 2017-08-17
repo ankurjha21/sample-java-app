@@ -119,6 +119,16 @@
             <name>Project Amateras Maven2 Repository</name>
             <url>http://amateras.sourceforge.jp/mvn/</url>
         </repository>
+        <repositories>
+  <repository>
+     <id>CLAESTOR</id>
+     <name>CLAESTOR-snapshots</name>
+     <snapshots>
+                <enabled>true</enabled>
+     </snapshots>
+     <url>http://172.17.0.6:8081/artifactory/snapshots</url>
+  </repository>
+</repositories>
     </repositories>
     <dependencies>
         <!-- == Begin Google == -->
