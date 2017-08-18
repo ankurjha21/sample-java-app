@@ -120,17 +120,19 @@
             <url>http://amateras.sourceforge.jp/mvn/</url>
         </repository>
         <repositories>
+            <distributionManagement>
   <repository>
-     <id>CLAESTOR</id>
-     <name>CLAESTOR-snapshots</name>
-     <snapshots>
-                <enabled>true</enabled>
-     </snapshots>
-     <url>http://172.17.0.6:8081/artifactory/snapshots</url>
+    <id>internal</id>
+    <name>internal</name>
+    <url>http://172.17.0.6:8081/artifactory/internal</url>
   </repository>
-</repositories>
-    </repositories>
-    <dependencies>
+  <snapshotRepository>
+    <id>snapshot</id>
+    <name>snapshot</name>
+    <url>http://172.17.0.6:8081/artifactory/snapshot</url>
+  </snapshotRepository>
+</distributionManagement>
+ <dependencies>
         <!-- == Begin Google == -->
         <dependency>
             <groupId>com.google.guava</groupId>
