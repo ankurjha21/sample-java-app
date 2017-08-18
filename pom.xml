@@ -119,8 +119,6 @@
             <name>Project Amateras Maven2 Repository</name>
             <url>http://amateras.sourceforge.jp/mvn/</url>
         </repository>
-        
-            <distributionManagement>
   <repository>
     <id>internal</id>
     <name>internal</name>
@@ -131,8 +129,7 @@
     <name>snapshot</name>
     <url>http://172.17.0.6:8081/artifactory/snapshot</url>
   </snapshotRepository>
-</distributionManagement>
-        <repositories>
+<repositories>
  <dependencies>
         <!-- == Begin Google == -->
         <dependency>
